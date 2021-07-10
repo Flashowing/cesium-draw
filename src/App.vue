@@ -1,9 +1,19 @@
 <template>
   <div id="app">
-    <router-view />
+    <PageFrame></PageFrame>
+    <CesiumContainer></CesiumContainer>
   </div>
 </template>
-
+<script>
+import CesiumContainer from './views/CesiumContainer'
+import PageFrame from './views/PageFrame'
+export default {
+  name: 'app',
+  components: {
+    CesiumContainer,PageFrame
+  }
+}
+</script>
 <style lang="scss">
 html,
 body {

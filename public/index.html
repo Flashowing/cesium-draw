@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang='zh-cn'>
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <meta name='viewport' content='width=device-width,initial-scale=1.0' />
+  <link rel='icon' href='<%= BASE_URL %>favicon.ico' />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+    Please enable it to continue.</strong>
+</noscript>
+<div id='app'></div>
+<!-- built files will be auto injected -->
+<script src='js/draw/GlobeTracker.js'></script>
+<script src='js/draw/draw.js'></script>
+<script src='js/draw/algorithm.js'></script>
+<script src='js/draw/GlobePointDrawer.js'></script>
+<script src='js/draw/GlobePolylineDrawer.js'></script>
+<script src='js/draw/GlobePolygonDrawer.js'></script>
+<script src='js/draw/GlobeWaterPolygonDrawer.js'></script>
+<script src='js/draw/GlobeCircleDrawer.js'></script>
+<script src='js/draw/GlobeRectangleDrawer.js'></script>
+<script src='js/draw/GlobeSelectRectangleDrawer.js'></script>
+<script src='js/draw/GlobeTooltip.js'></script>
+<script src='js/draw/GlobeBufferLineDrawer.js'></script>
+<script src='js/draw/PlotStraightArrowDrawer.js'></script>
+<script src='js/draw/PlotAttackArrowDrawer.js'></script>
+<script src='js/draw/PlotPincerArrowDrawer.js'></script>
+<script src='js/draw/plotUtil.js'></script>
+<script src='js/draw/moveShape.js'></script>
+<script src='js/loadGeojson.js'></script>
+</body>
 </html>

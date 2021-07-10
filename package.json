@@ -1,7 +1,7 @@
 {
-  "name": "cesium-vue-electron",
-  "description": "cesium-vue-electron",
-  "author": "liubf",
+  "name": "cesium-draw",
+  "description": "cesium-draw",
+  "author": "fpj",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,9 +15,12 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@turf/turf": "^6.4.0",
     "cesium": "^1.68.0",
     "core-js": "^3.6.4",
+    "element-ui": "^2.15.3",
     "vue": "^2.6.11",
+    "vue-mouse-menu": "^2.1.2",
     "vue-router": "^3.1.5",
     "vuex": "^3.1.2"
   },
